@@ -1,0 +1,75 @@
+{
+  "model_name": "Random Forest Congestion Classifier",
+  "training_timestamp": "2026-11-06T15:25:44.565804+00:00",
+  "data_source": "SQLite Database (network_analyzer.db)",
+  "is_demo_model": false,
+  "total_samples": 775,
+  "test_samples": 155,
+  "test_accuracy": 1.0,
+  "accuracy_percentage": 100.0,
+  "accuracy_above_85": true,
+  "accuracy_status": "Target Passed (> 85%)",
+  "feature_names": [
+    "download_mbps",
+    "upload_mbps",
+    "packets_per_sec",
+    "avg_packet_size",
+    "bandwidth_util_percent",
+    "latency_ms",
+    "jitter_ms",
+    "packet_loss_pct",
+    "tcp_ratio",
+    "udp_ratio",
+    "icmp_ratio",
+    "unique_flows"
+  ],
+  "classes": [
+    "High Congestion",
+    "Low Congestion",
+    "Medium Congestion"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 8,
+    "min_samples_split": 4,
+    "class_weight": "balanced"
+  },
+  "classification_metrics": {
+    "Low Congestion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 55.0
+    },
+    "Medium Congestion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 50.0
+    },
+    "High Congestion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 50.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 155.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 155.0
+    }
+  },
+  "reports": {
+    "confusion_matrix": "C:\\Users\\Tamilarasi\\OneDrive\\Documents\\cn project\\reports\\confusion_matrix.png",
+    "feature_importance": "C:\\Users\\Tamilarasi\\OneDrive\\Documents\\cn project\\reports\\feature_importance.png"
+  },
+  "disclaimer": "TRAINED DIRECTLY ON SQLITE DATABASE MEASUREMENTS & PREDICTIONS"
+}
